@@ -12,7 +12,7 @@ Because of lates security concers by mozilla it's recomennded to use some live s
 Python3.+ version required.
 ```
 $ git clone https://github.com/azeek21/tzs.git
-$ cd tsz
+$ cd tzs
 $ python -m http.server
 ```
 open localost:8000 in your browser. 
