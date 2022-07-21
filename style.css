@@ -1,0 +1,145 @@
+/* general */
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	color: white;
+	scroll-behavior: smooth;
+}
+
+.container{
+	position: relative;
+	background-color: #C0DBD9;
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: auto;
+}
+
+
+/* general end */	
+
+
+/* header */
+.header{
+	width: 100%;
+	height: 100px;
+	background-color: #7FAFF6;
+	display: flex;
+	align-items: center;
+}
+
+.popup-button{
+	padding: 8px 15px;
+	background-color: #A5C7F9;
+	border: none;
+	border-radius: 5px;
+	margin-left: 30px;
+	font-family: "Roboto";
+	font-weight: 400;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+/* header-end */
+
+/* popup */
+.popup{
+	width: 0;
+	height: 0;
+	opacity: 0;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	top: 50px;
+	left: 50px;
+	box-shadow: 0px 0px 15px gray;  /* add customly so it looks better */
+	transition: 0.3s ease-in-out;
+}
+
+.popup__close{
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	padding: 8px 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	border-radius: 5px;
+	background-color: #7FAFF6;
+	cursor: pointer;
+}
+
+.popup__active{
+	opacity: 1;
+	width: 400px;
+	height: 400px;
+	transition: 0.5s ease-in-out;
+}
+
+
+.popup__text{
+	font-size: 53px;
+	font-weight: 400;
+	color: black;
+}
+/* popup end */
+
+/* main */
+	/* section */
+
+.main__section{
+	margin-top: 15px;
+	width: 100%;
+	background-color: #B3F95A;
+	display: grid;
+	grid-template-columns: 2.9fr 5.9fr 1.6fr; 
+	grid-template-rows: 190px 190px;
+	gap: 15px;
+}
+
+.main__item{
+	background-color: #8AD191;
+	display: flex;
+	align-items: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Roboto';
+	font-size: 53px;
+}
+
+.main__item:nth-child(4){
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+	/* section end  */
+ /* main end */
+
+ /* cards */
+ .section-cards{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+	margin-top: 15px;
+	padding: 30px;
+	background-color: #88B5BF;
+ }
+ .section-cards__card{
+	width: 100%;
+	aspect-ratio: 255/199;
+	background-color: #0D89B0;
+ }
+
+ /* cards end */
+
+ .footer{
+	margin-top: 100px;
+	height: 100px;
+	background-color: #7FAFF6;
+	width: 100%;
+ }
