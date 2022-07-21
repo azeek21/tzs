@@ -11,7 +11,7 @@ How to run?
 Because of lates security concers by mozilla it's recomennded to use some live servers. Blow a very simple example.
 Python3.+ version required.
 ```
-$ https://github.com/azeek21/tzs.git
+$ git clone https://github.com/azeek21/tzs.git
 $ cd tsz
 $ python -m http.server
 ```
